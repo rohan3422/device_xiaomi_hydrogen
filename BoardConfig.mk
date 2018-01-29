@@ -16,10 +16,10 @@
 # inherit from common msm8956-common
 -include device/xiaomi/msm8956-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/hydrogen
+DEVICE_PATH := device/xiaomi/helium
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := hydrogen
+TARGET_OTA_ASSERT_DEVICE := helium
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -44,4 +44,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # inherit from the proprietary version
--include vendor/xiaomi/hydrogen/BoardConfigVendor.mk
+-include vendor/xiaomi/helium/BoardConfigVendor.mk
